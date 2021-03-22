@@ -2,8 +2,9 @@
 
  A service that allows individuals and organizations to make their website accessible via the World Wide Web.
  
- ### Web hosts 
- 	Companies that provide space on a server owned or leased for use by clients.
+ ### Web hosts / Hosting services
+ 	- Companies that provide space on a server owned or leased for use by clients.
+ 	- Provides Physical disk space and bandwidth
  	
  ## Types of hosting
  	- Shared web hosting service 
