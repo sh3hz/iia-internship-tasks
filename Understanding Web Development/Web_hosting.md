@@ -8,18 +8,17 @@
  	
  ## Types of hosting
  	- Shared web hosting service 
- 	- Reseller web hosting
- 	- Virtual Dedicated Server
+ 	- Virtual Private Server
  	- Dedicated hosting service
- 	- Managed hosting service
- 	- Colocation web hosting service
  	- Cloud hosting
+ 	- Reseller web hosting
  	- Clustered hosting
  	- Grid hosting
  	- Home server
  	- Specific hosting services ( Image, Video, Email)
  	
  ## Main Features from Hosting provider
+ 	- Control panel ( Cpanel )
  	- Domain service
  	- Email Accounts
  	- FTP Access
@@ -30,4 +29,5 @@
  	- Types : enterprise content management (ECM) and web content management (WCM)
  	- Two major components: content management application (CMA), content delivery application (CDA)
  	- On basis of Installation type : on-premises ( Wordpress.org, Drupal, Joomla, ModX) , cloud-based (SquareSpace, Wordpress.com, WIX)
+ 	
  					   
