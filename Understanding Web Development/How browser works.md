@@ -1,6 +1,6 @@
 # Understanding Web Development
 
-## ⏹️ How browser works
+## ⏹️ How browser works ⏹️
 
 #### Major Browsers
 - Chrome, MS Edge, Firefox, Safari, Opera etc
@@ -23,9 +23,13 @@
 
 #### Rendering Engine
 	
-###### Main flow
+##### Main flow
 ![Image](https://miro.medium.com/max/600/1*cfQpu6Xvb7e9IiH4CCuiCg.png)
 	
 	
-
-	 
+#### HTML Parser
+	 - parse the HTML markup into a parse tree. 
+	 - The output parse tree is a tree of DOM (Document Object Model) element and attribute nodes.
+	 - Parsing Algorithm - Tokenization & Tree construction
+	 - Formal format for defining HTML: DTD (Document Type Definition)
+![HTML Parsing flow](https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image017.png)
