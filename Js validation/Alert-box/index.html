@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Form Validation</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/formhack.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form
+        class="registration"
+        id="registration"
+        name="registration"
+        onsubmit = "return validate();"
+      >
+        <h1>Create your account</h1>
+
+        <label for="username">
+          <span>Full Name</span>
+
+          <input
+            type="text"
+            id="username"
+            name="username"
+            minlength="3"
+            
+          />
+        </label>
+
+        <label for="address">
+          <span>Address</span>
+          <input type="text" id="address" name="address"/>
+        </label>
+
+        <label for="zipcode">
+          <span>Zipcode</span>
+
+          <input
+            type="text"
+            pattern="[0-9]*"
+            id="zipcode"
+            name="zipcode"
+            
+          />
+        </label>
+        <label for="state">
+          <span>State</span>
+
+          <select id="state" name="" >
+            <option value="Kerala">Kerala</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Karnataka">Karnataka</option>
+          </select>
+        </label>
+
+        <label for="email">
+          <span>Email Address</span>
+          <input type="email" id="email"  />
+        </label>
+        <label for="email_repeat">
+          <span>Confirm Email</span>
+          <input type="email" name="email_repeat" />
+        </label>
+
+        <label for="password">
+          <span>Password</span>
+
+          <input
+            type="password"
+            name="password"
+            maxlength="100"
+            minlength="8"
+           
+          />
+        </label>
+
+        <label for="password_repeat">
+          <span>Repeat Password</span>
+          <input
+            type="password"
+            name="password_repeat"
+            maxlength="100"
+            minlength="8"
+            
+          />
+        </label>
+
+        <br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -102,3 +102,4 @@ JavaScript is a dynamic functional object-oriented programming language that can
 4. Implementing a front-end component for a distributed web application with remote data storage managed by a back-end component, which is a server-side program that is traditionally written in a server-side language such as PHP, Java or C#, but can nowadays also be written in JavaScript with NodeJS.
 
 5. Implementing a complete distributed web application where both the front-end and the back-end components are JavaScript programs.
+

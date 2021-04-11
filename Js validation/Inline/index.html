@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Form Validation</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/formhack.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="registration" id="registration" onsubmit="success()">
+        <h1>Create your account</h1>
+
+        <label for="username">
+          <span>Full Name</span>
+
+          <input type="text" id="username" minlength="3" required />
+
+          <ul class="input-requirements">
+            <li>At least 3 characters long</li>
+            <li>
+              Must only contain letters and numbers (no special characters)
+            </li>
+          </ul>
+        </label>
+
+        <label for="address">
+          <span>Address</span>
+          <input type="text" id="address" required />
+        </label>
+
+        <label for="zipcode">
+          <span>Zipcode</span>
+
+          <input type="text" pattern="[0-9]*" id="zipcode" required />
+          <ul class="input-requirements">
+            <li>Must only contain numbers (no special characters)</li>
+          </ul>
+        </label>
+        <label for="state">
+          <span>State</span>
+
+          <select id="state" name="" required>
+            <option value="Kerala">Kerala</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Karnataka">Karnataka</option>
+          </select>
+        </label>
+
+        <label for="email">
+          <span>Email Address</span>
+          <input type="email" id="email" required />
+        </label>
+        <label for="email_repeat">
+          <span>Confirm Email</span>
+          <input type="email" id="email_repeat" required />
+        </label>
+
+        <label for="password">
+          <span>Password</span>
+
+          <input
+            type="password"
+            id="password"
+            maxlength="100"
+            minlength="8"
+            required
+          />
+
+          <ul class="input-requirements">
+            <li>At least 8 characters long (and less than 100 characters)</li>
+            <li>Contains at least 1 number</li>
+            <li>Contains at least 1 lowercase letter</li>
+            <li>Contains at least 1 uppercase letter</li>
+            <li>Contains a special character (e.g. @ !)</li>
+          </ul>
+        </label>
+
+        <label for="password_repeat">
+          <span>Repeat Password</span>
+          <input
+            type="password"
+            id="password_repeat"
+            maxlength="100"
+            minlength="8"
+            required
+          />
+        </label>
+
+        <br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      function success() {
+        alert("Account created successfully");
+      }
+    </script>
+  </body>
+</html>
