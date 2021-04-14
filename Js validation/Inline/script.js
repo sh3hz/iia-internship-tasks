@@ -72,14 +72,6 @@ var usernameValidityChecks = [
 		},
 		invalidityMessage: 'This input needs to be at least 3 characters',
 		element: document.querySelector('label[for="username"] .input-requirements li:nth-child(1)')
-	},
-	{
-		isInvalid: function(input) {
-			var illegalCharacters = input.value.match(/[^a-zA-Z0-9]/g);
-			return illegalCharacters ? true : false;
-		},
-		invalidityMessage: 'Only letters and numbers are allowed',
-		element: document.querySelector('label[for="username"] .input-requirements li:nth-child(2)')
 	}
 ];
 
@@ -184,3 +176,15 @@ function validate() {
 submit.addEventListener('click', validate);
 form.addEventListener('submit', validate);
 
+ 
+
+//Populating Dropdown
+var select = document.getElementById("state");
+var options = ['Andaman and Nicobar Islands', 'Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chandigarh', 'Chhattisgarh', 'Dadra and Nagar Haveli', 'Daman and Diu', 'Delhi', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu', 'Jharkhand', 'Karnataka', 'Kashmir', 'Kerala', 'Ladakh', 'Lakshadweep', 'Madhya Pradesh', 'Maharashtra', 'Manipur', 'Meghalaya', 'Mizoram', 'Nagaland', 'Odisha', 'Puducherry', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura', 'Uttarakhand', 'Uttar Pradesh', 'West Bengal'];
+for(var i = 0; i < options.length; i++) {
+    var opt = options[i];
+    var el = document.createElement("option");
+    el.textContent = opt;
+    el.value = opt;
+    select.appendChild(el);
+}

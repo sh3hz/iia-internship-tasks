@@ -60,8 +60,12 @@ a {
 	padding-left: 10px;
 	content: "\2713";
 }
-
-
+.captcha{
+    text-align: center;
+}
+.g-recaptcha{
+    display: inline-block;
+}
 
 
 
