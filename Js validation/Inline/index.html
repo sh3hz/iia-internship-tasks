@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="container">
-      <form class="registration" id="registration" onsubmit="success()">
+      <form class="registration" id="registration" onsubmit="submitUserForm()">
         <h1>Create your account</h1>
 
         <label for="username">
@@ -43,16 +43,17 @@
         <label for="zipcode">
           <span>Zipcode</span>
 
-          <input type="text" pattern="[0-9]*" id="zipcode" required />
+          <input type="text" pattern="[0-9]*" id="zipcode" maxlength="6" minlength="6" required />
           <ul class="input-requirements">
             <li>Must only contain numbers (no special characters)</li>
+            <li>Must be six digits</li>
           </ul>
         </label>
 
         <label for="state">
           <span>State</span>
 
-          <select id="state" name="" required>
+          <select id="state" name="state" required>
             <option value="none" selected disabled hidden>
               Choose your state
             </option>
@@ -102,7 +103,9 @@
           <div
             class="g-recaptcha"
             data-sitekey="6LcwHKkaAAAAAF-QDX9tkW8atROY7gFzEKCr4l19"
+            data-callback="verifyCaptcha"
           ></div>
+          <div id="g-recaptcha-error"></div>
         </div>
         <br />
 
@@ -111,9 +114,4 @@
     </div>
   </body>
   <script src="script.js"></script>
-  <script>
-    function success() {
-      alert("Account created successfully");
-    }
-  </script>
 </html>
