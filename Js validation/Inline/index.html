@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <title>Form Validation</title>
-
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -11,6 +10,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/formhack.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
     <div class="container">
@@ -93,18 +93,17 @@
             required
           />
         </label>
-
+        <div class="g-recaptcha" data-sitekey="6LcwHKkaAAAAAF-QDX9tkW8atROY7gFzEKCr4l19"></div>
         <br />
 
         <input type="submit" value="Submit" />
       </form>
     </div>
-
-    <script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
     <script>
       function success() {
         alert("Account created successfully");
       }
     </script>
-  </body>
 </html>
