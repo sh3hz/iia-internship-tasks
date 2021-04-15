@@ -103,9 +103,9 @@
           <div
             class="g-recaptcha"
             data-sitekey="6LcwHKkaAAAAAF-QDX9tkW8atROY7gFzEKCr4l19"
-            data-callback="verifyCaptcha"
+            
           ></div>
-          <div id="g-recaptcha-error"></div>
+          <span id="captcha" style="margin-left:100px;color:red" />
         </div>
         <br />
 
@@ -116,7 +116,13 @@
   <script src="script.js"></script>
   <script>
   function submitUserForm() {
-			alert("Account created successfully");
+      var response = grecaptcha.getResponse();
+      if(response.length == 0){
+        document.getElementById('captcha').innerHTML="Please mark captcha checkbox";
+        return false;
+      }
+      else{
+      alert("Account created successfully");} 
 	}
 </script>
 </html>
